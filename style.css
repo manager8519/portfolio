@@ -1,9 +1,14 @@
+@font-face{
+    font-family:"Dancing";
+    src: url("./fonts/DancingScript-Medium.ttf")
+}
 *{
     box-sizing:border-box;
 }
 body{
     margin: 0;
     padding: 0;
+    font-family:"Dancing";
 }
 .block{
     background-color: green;
@@ -58,4 +63,104 @@ body{
     font-size: 32px;
     line-height: 37px;
     text-align: center;
+}
+.ul.menu {
+    list-style: none;
+}
+.ul.menu li::before {
+    /* content: $; */
+}
+.test{
+    background-color:blue;
+    /* height: 100px; */
+    /* width: 100px; */
+    /* overflow-y: scroll; */
+    /* overflow: auto; */
+    height: 50wh;
+    width: 50wv;
+}
+.child{
+   
+    font-size: 2 rem;
+}
+.parent{
+    font-size: 10px;
+}
+html {
+    font-size: 20px;
+}
+svg {
+    fill: red;
+    stroke: yellow;
+}
+svg:hover {
+    fill: black;
+}
+.test8{
+    height: 100vh;
+    width: 100vw;
+    background: url("https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png");
+    background-repeat: no-repeat;
+    /* background-size: 300px; */
+    background-size: cover;
+    /* background-position: 20% 50%; */
+    background-attachment: fixed;
+
+}
+.test10{
+    background-color:blue;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    /* top: 0; */
+    /* left: 0; */
+    /* position: relative;
+    bottom: 100px; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.layt{
+    background-color:yellow;
+    height: 100px;
+    position: relative;
+    font-family: 'Indie Flower', cursive;
+}
+.span{
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Indie Flower', cursive;
+}
+.title{
+    font-weight: bold;
+    font-style: italic;
+}
+.galary-item-paper{
+
+    position: relative;
+    width: 25%;
+    height: 480px;
+    background: url('./paper.png');
+    float: left;
+
+}
+.galary-item-laptop{
+    position: relative;
+    background: url('./laptop.png');
+    width: 25%;
+    height: 480px;
+    float: left;
+}
+.galary-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+    opacity: 0;
+}
+
+.galary-shadow:hover {
+    opacity: 1;
 }
